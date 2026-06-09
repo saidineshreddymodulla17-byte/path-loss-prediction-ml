@@ -1,6 +1,6 @@
 Model,RMSE (dB),R² Score
 Hist Gradient Boosting,4.21,0.855
-Gradient Boosting,4.259,0.851
+Gradient Boosting,4.267,0.851
 SVM,4.27,0.851
 KNN,4.414,0.841
 XGBoost,4.47,0.836

@@ -1,5 +1,11 @@
+import os
+
 import pandas as pd
 import numpy as np
+
+import matplotlib
+matplotlib.use("Agg")
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -18,6 +24,12 @@ from sklearn.linear_model import Ridge, Lasso
 from sklearn.svm import SVR
 from sklearn.neighbors import KNeighborsRegressor
 from xgboost import XGBRegressor
+
+# Create folders automatically
+os.makedirs("../images", exist_ok=True)
+os.makedirs("../results", exist_ok=True)
+
+print("🚀 Program Started...")
 
 print("🚀 Program Started...")
 
@@ -385,6 +397,11 @@ plt.savefig(
 )
 
 plt.close()
+
+print("\n✅ Results table saved")
+print("✅ Graphs saved successfully")
+print("🎉 Project Execution Completed")
+plt.close("all")
 
 print("\n✅ Results table saved")
 print("✅ Graphs saved successfully")
